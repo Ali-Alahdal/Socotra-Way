@@ -1,5 +1,5 @@
 
-import Stars from "../../assets/images/home/stars.jpg";
+import IntroImage from "../../assets/images/home/bg/introduction.jpg";
 
 function Introduction() {
     return ( 
@@ -7,7 +7,7 @@ function Introduction() {
            <section
             className="relative hero  min-h-screen  w-full "
             style={{
-                backgroundImage: `url(${Stars})`,
+                backgroundImage: `url(${IntroImage})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
