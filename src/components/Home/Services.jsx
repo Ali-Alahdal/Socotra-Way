@@ -1,6 +1,6 @@
 import Travel from "../../assets/images/home/travel.png"
 import Car from "../../assets/images/home/car.jpg"
-import Camp from "../../assets/images/home/Camp.png"
+import Camp from "../../assets/images/home/camp.png"
 import Guide from "../../assets/images/home/guide.png"
 import Safety from "../../assets/images/home/safety.jpeg"
 import LocalMeals from "../../assets/images/home/localmeals.png"
