@@ -1,0 +1,91 @@
+import React, { useEffect, useRef, useState } from "react";
+import BestTimeImage from "../../assets/images/home/besttime.jpg"
+import Culutr from "../../assets/images/home/cultur2.jpg"
+  const deals = [
+  {
+    title: "When to visit",
+    description: "Visit Socotra from October to April for warm weather. Off-season is windier but still sunny, offering a quieter experience",
+    image:
+      BestTimeImage,
+    overlayColor: "bg-orange-900/50",
+    buttonColor: "bg-white text-blue-600 hover:bg-blue-50",
+  },
+  {
+    title: "Safety",
+    description: "Socotra is safe for travel, as it has stayed untouched by Yemen’s conflict. Visitors can enjoy its peaceful, secure environment and explore its stunning landscapes and unique biodiversity worry-free ",
+
+
+    image:
+      Culutr,
+    overlayColor: "bg-green-900/50",
+    buttonColor: "bg-white text-purple-600 hover:bg-purple-50",
+  },
+];
+
+const EscapeDeals = () => {
+  const refs = useRef([]);
+  const [visible, setVisible] = useState([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const shown = [...visible];
+        entries.forEach((entry) => {
+          const index = Number(entry.target.getAttribute("data-index"));
+          if (entry.isIntersecting && !shown.includes(index)) {
+            shown.push(index);
+          }
+        });
+        setVisible(shown);
+      },
+      { threshold: 0.25 }
+    );
+
+    refs.current.forEach((ref) => ref && observer.observe(ref));
+
+    return () => observer.disconnect();
+  }, [visible]);
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+     
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {deals.map((deal, index) => (
+          <div
+            key={index}
+            ref={(el) => (refs.current[index] = el)}
+            data-index={index}
+            className={`relative rounded-xl overflow-hidden shadow-lg group h-64 transition-all duration-1000 ease-out transform ${
+              visible.includes(index)
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }`}
+            style={{ transitionDelay: `${index * 150}ms` }}
+          >
+            {/* Background image with overlay */}
+            <div
+              className={`absolute inset-0 bg-cover bg-center`}
+              style={{ backgroundImage: `url(${deal.image})` }}
+            >
+              <div className={`${deal.overlayColor} absolute inset-0`}></div>
+            </div>
+            <div className="relative h-full flex items-center justify-center p-6">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-white mb-2">{deal.title}</h3>
+                <p className={`mb-4 text-white`}>{deal.description}</p>
+                <button
+                  className={`px-6 py-2 font-medium rounded-full transition duration-300 ${deal.buttonColor}`}
+                >
+                  Explore
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default EscapeDeals;
