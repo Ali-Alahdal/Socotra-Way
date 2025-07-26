@@ -1,4 +1,7 @@
-import Travel from "../../assets/images/home/bg/travel.jpg";
+import Travel from "../../assets/images/home/travel.jpg"
+import Car from "../../assets/images/home/car.jpg"
+import Camp from "../../assets/images/home/Camp.png"
+import Guide from "../../assets/images/home/guide.png"
 import * as motion from "motion/react-client";
 import AnimatedBackground from "../Parts/AnimatedBackground" // adjust path as needed
 
@@ -6,16 +9,15 @@ export default function ScrollTriggered() {
   return (
     <section style={sectionStyle} className="text-black  relative overflow-hidden ">
       
-            {/* Section Header */}
-       <div className="absolute top-0 text-center  w-full h-full z-50 text-black ">
-        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl mb-4">
-          Choose Your Escape
-        </h2>
-   
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Indulge in relaxation or adventure this season.
-        </p>
-      </div>
+     <div className="absolute top-0 left-0 w-full h-full z-50 flex flex-col  text-center text-black px-4">
+  <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl mb-4 break-words">
+    Socotra Way — Your Path to the Island
+  </h2>
+
+  <p className="text-lg text-gray-600 max-w-2xl mx-auto break-words whitespace-normal">
+    We handle everything: visas, flights, stays, tours, and local moments so you experience Socotra the way it’s meant to be.
+  </p>
+</div>
          <AnimatedBackground />
       <div style={container} className="mt-12">
         
@@ -67,7 +69,7 @@ const cardVariants = {
     y: 300,
   },
   onscreen: {
-    y: 50,
+    y: 10,
     rotate: -10,
     transition: {
       type: "spring",
@@ -88,7 +90,7 @@ const sectionStyle = {
 };
 
 const container = {
-  margin: "50px auto",
+  margin: "100px auto",
   maxWidth: 500,
   paddingBottom: 100,
   width: "100%",
@@ -124,12 +126,12 @@ const card = {
   boxShadow:
     "0 0 1px hsl(0deg 0% 0% / 0.075), 0 0 2px hsl(0deg 0% 0% / 0.075), 0 0 4px hsl(0deg 0% 0% / 0.075), 0 0 8px hsl(0deg 0% 0% / 0.075), 0 0 16px hsl(0deg 0% 0% / 0.075)",
   transformOrigin: "10% 60%",
-  padding: 16,
+  padding: "10px 16px 16px 16px",
 };
 
 const imageStyle = {
   width: "100%",
-  height: "auto",
+  height: "60%",
   borderRadius: 12,
   marginBottom: 8,
 };
@@ -156,11 +158,10 @@ const descriptionStyle = {
 
 const cards = [
   [Travel, 340, 10, "Visa & Flights", "We assist with visa applications and flight bookings, ensuring an easy route to Socotra through cities like Cairo or Abu Dhabi."],
-  [Travel, 20, 40, "Juicy Orange", "Vibrant and energetic location, full of flavor and life."],
-  ["https://via.placeholder.com/200x300?text=Lemon", 60, 90, "Sour Lemon", "A tangy spot for a sour but memorable adventure."],
-  ["https://via.placeholder.com/200x300?text=Pear", 80, 120, "Sweet Pear", "Soft and serene, great for relaxed getaways."],
-  ["https://via.placeholder.com/200x300?text=Apple", 100, 140, "Green Apple", "Classic charm with a refreshing twist."],
-  ["https://via.placeholder.com/200x300?text=Blueberry", 205, 245, "Fresh Blueberries", "Cool and juicy vibes for a laid-back retreat."],
-  ["https://via.placeholder.com/200x300?text=Eggplant", 260, 290, "Healthy Eggplant", "Wholesome and nourishing adventures await."],
-  ["https://via.placeholder.com/200x300?text=Grapes", 290, 320, "Purple Grapes", "Elegant and rich experiences for the curious."],
+  [Car, 20, 40, "Transport", "Enjoy airport pickup and all-island travel in 4x4 vehicles, plus optional boat trips to remote beaches like Shuab."],
+  [Camp, 60, 90, "Accommodation", "Stay in comfortable beach campsites or eco-lodges, complete with bedding, meals, and basic facilities for a cozy island experience."],
+  [Guide, 80, 120, "Guided Tours", "Explore Socotra’s iconic sites—Dragon’s Blood trees, Hoq Cave, Arher dunes, and Detwah Lagoon—with knowledgeable local guides."],
+  ["https://via.placeholder.com/200x300?text=Apple", 100, 140, "Local Meals", "Savor fresh seafood, flatbreads, honey, and dates. We cater to special dietary needs, including vegetarian options."],
+  ["https://via.placeholder.com/200x300?text=Blueberry", 205, 245, "Safety Support", "We provide first aid, travel insurance advice, and satellite communication for peace of mind during your trip."],
+  ["https://via.placeholder.com/200x300?text=Eggplant", 260, 290, "Cultural Experiences", "Connect with Socotri life through village visits, local crafts, traditional honey gathering, music, and storytelling nights."],
 ];

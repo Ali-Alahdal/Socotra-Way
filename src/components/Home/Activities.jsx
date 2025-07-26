@@ -95,7 +95,7 @@ function Activities() {
       </div>
 
       {/* Content container */}
-      <div  className="relative  bg-cover bg-center z-10 flex flex-col lg:flex-row h-full container mx-auto px-4 sm:px-6" style={{ 
+      <div  className="relative  bg-cover bg-center z-10 flex  lg:flex-row h-full container mx-auto px-4 sm:px-6" style={{ 
             backgroundImage: `url(${cards[currentIndex].imageUrl})`,
           }} >
         {/* Left side - text content with fade animation */}

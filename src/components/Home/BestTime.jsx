@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import Travel from "../../assets/images/home/bg/travel.jpg";
 import BestTimeImage from "../../assets/images/home/besttime.jpg";
 
 function BestTime() {

@@ -1,11 +1,14 @@
+import Tree from "../../assets/images/home/tree.png"
+
 export default function AnimatedBackground() {
   const ballCount = 40;
+  const imageUrl = Tree; // Replace with your image path
 
-  const random = (min, max) =>
-    Math.random() * (max - min) + min;
+ 
+  const random = (min, max) => Math.random() * (max - min) + min;
 
   return (
-    <div className="absolute inset-0 overflow-hidden z-0 balls-bg">
+    <div className="balls-bg">
       {Array.from({ length: ballCount }).map((_, i) => {
         const top = `${random(0, 100)}%`;
         const left = `${random(0, 100)}%`;
@@ -13,18 +16,21 @@ export default function AnimatedBackground() {
         const delay = `${-random(0, 30)}s`;
         const originX = `${random(-30, 30)}vw`;
         const originY = `${random(-30, 30)}vh`;
-        const blur = `${random(4, 6)}vmin`;
 
         const style = {
+          position: "absolute",
           top,
           left,
-          animationDuration: duration,
+          width: "10vmin",
+          height: "10vmin",
+          objectFit: "contain",
+       
+          animation: `move ${duration} linear infinite`,
           animationDelay: delay,
           transformOrigin: `${originX} ${originY}`,
-          boxShadow: `${Math.random() < 0.5 ? "-" : ""}40vmin 0 ${blur} currentColor`,
         };
 
-        return <span key={i} className="ball" style={style} />;
+        return <img key={i} src={imageUrl} style={style} alt="" draggable={false} />;
       })}
     </div>
   );

@@ -14,31 +14,3 @@
   overflow: hidden;
   z-index: 0;
 }
-
-.ball {
-  position: absolute;
-  width: 10vmin;
-  height: 10vmin;
-  border-radius: 50%;
-  backface-visibility: hidden;
-  animation: move linear infinite;
-  opacity: 0.6;
-}
-
-/* Light gray and gray alternating */
-.ball:nth-child(odd) {
-  color: lightgray;
-}
-.ball:nth-child(even) {
-  color: gray;
-}
-
-/* Generate randomness for up to 50 balls */
-.ball:nth-child(n) {
-  top: calc(100% * var(--top, 0.5));
-  left: calc(100% * var(--left, 0.5));
-  animation-duration: calc(20s + 20s * (var(--i, 1)));
-  animation-delay: calc(-1s * var(--i, 1));
-  transform-origin: calc((var(--i, 1) * 10vw) - 20vw) calc((var(--i, 1) * 5vh) - 10vh);
-  box-shadow: calc(40vmin * (var(--i, 1) % 2 == 0 ? -1 : 1)) 0 calc(4vmin + 1vmin * (var(--i, 1))) currentColor;
-}
