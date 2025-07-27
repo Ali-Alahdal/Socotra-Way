@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import Passport from "../../assets/images/home/passport.jpg";
-import Flight from "../../assets/images/home/flight.jpg";
-import Tour from "../../assets/logos/Logo.png";
+import Passport from "../../assets/images/home/travel.png";
+import Flight from "../../assets/images/home/flight.png";
+import Tour from "../../assets/logos/Logo2.png";
 
 function HowToTravel() {
   const features = [
@@ -16,7 +16,7 @@ function HowToTravel() {
       img: Flight,
     },
     {
-      title: "Arranging a full travel package",
+      title: "Reserve a Tour",
       desc: "With no public transport or rental cars on Socotra, the best way to explore is by booking a tour with a local agency like Us (Socotra Way), where English-speaking guides will show you the island’s top spots",
       img: Tour,
     },
@@ -64,7 +64,7 @@ function HowToTravel() {
           style={{ transitionDelay: "150ms" }}
         >
           <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground">
-            Socotra
+            Socotra Way
           </div>
           <h2 className="text-4xl font-medium">
             Traveling to Socotra
@@ -88,7 +88,7 @@ function HowToTravel() {
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="rounded-lg border bg-zinc-100 p-3">
+              <div className="rounded-lg border bg-zinc-100 p-3 h-[50%]">
                 <img
                   src={feature.img}
                   alt={feature.title}

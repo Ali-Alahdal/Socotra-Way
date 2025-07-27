@@ -20,15 +20,15 @@ function Header() {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
+                                <li onClick={() => document.getElementById("Socotra").scrollIntoView({ behavior: "smooth" })}><a>Socotra</a></li>
                             <li>
-                            <a>Parent</a>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
+                            <a>Discover</a>
+                             <ul className="p-2">
+                                <li onClick={() => document.getElementById("Activites").scrollIntoView({ behavior: "smooth" })}><a>Activites</a></li>
+                                <li onClick={() => document.getElementById("Info").scrollIntoView({ behavior: "smooth" })}><a>Info</a></li>
                             </ul>
                             </li>
-                            <li><a>Item 3</a></li>
+                        <li onClick={() => document.getElementById("AboutUs").scrollIntoView({ behavior: "smooth" })}><a>About Us</a></li>
                         </ul>
                         </div>
                          <img width={"50px"} height={"50px"} className="hidden lg:inline-block fill-current  bg-white rounded-full" src={Logo} />
@@ -36,17 +36,17 @@ function Header() {
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
+                        <li onClick={() => document.getElementById("Socotra").scrollIntoView({ behavior: "smooth" })}><a>Socotra</a></li>
                         <li>
                             <details>
-                            <summary>Parent</summary>
+                            <summary>Discover</summary>
                             <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
+                                <li onClick={() => document.getElementById("Activites").scrollIntoView({ behavior: "smooth" })}><a>Activites</a></li>
+                                <li onClick={() => document.getElementById("Info").scrollIntoView({ behavior: "smooth" })}><a>Info</a></li>
                             </ul>
                             </details>
                         </li>
-                        <li><a>Item 3</a></li>
+                        <li onClick={() => document.getElementById("AboutUs").scrollIntoView({ behavior: "smooth" })}><a>About Us</a></li>
                         </ul>
                     </div>
                     <a className="navbar-end" lassName="p-2 bg-red-50 " href="https://wa.me/905538993140" target="_blank" rel="noopener noreferrer">

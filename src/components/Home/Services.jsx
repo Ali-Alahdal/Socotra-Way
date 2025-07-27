@@ -2,7 +2,7 @@ import Travel from "../../assets/images/home/travel.png"
 import Car from "../../assets/images/home/car.jpg"
 import Camp from "../../assets/images/home/camp.png"
 import Guide from "../../assets/images/home/guide.png"
-import Safety from "../../assets/images/home/safety.jpeg"
+import Safety from "../../assets/images/home/safety.png"
 import LocalMeals from "../../assets/images/home/localmeals.png"
 import Cultur from "../../assets/images/home/cultur.png"
 import * as motion from "motion/react-client";
@@ -10,7 +10,7 @@ import AnimatedBackground from "../Parts/AnimatedBackground" // adjust path as n
 
 export default function ScrollTriggered() {
   return (
-    <section style={sectionStyle} className="text-black  relative overflow-hidden ">
+    <section id="AboutUs" style={sectionStyle} className="text-black  relative overflow-hidden ">
       
      <div className="absolute top-0 left-0 w-full h-full z-50 flex flex-col  text-center text-black px-4">
   <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl mb-4 break-words">

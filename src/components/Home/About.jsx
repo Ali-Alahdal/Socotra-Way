@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Landscapes from "../../assets/images/home/landscapes.jpg"
 import Animals from "../../assets/images/home/animals.jpg"
-import Cultur from "../../assets/images/home/cultur.jpg"
+import Cultur from "../../assets/images/home/cultur2.jpg"
 
 function About() {
   const activites = [
@@ -54,9 +54,10 @@ function About() {
   }, [visibleItems]);
 
   return (
-    <section  className={`   lg:pt-[10%] pt-[40%] bg-white `}>
+    <section id="Socotra"  className={`   lg:pt-[10%] pt-[40%] bg-white `}>
    
       <div
+      
         ref={headerRef}
         data-index={-1}
         className={`max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 px-12 z-50 transform transition-all duration-1000 ease-out ${

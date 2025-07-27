@@ -21,7 +21,7 @@ function Introduction() {
                 <h1 className="mb-5 text-5xl font-bold">The Jewel of the Arabian Sea</h1>
                 <p className="mb-5">
 A place of rare beauty, Socotra is home to unique landscapes, exotic plants, and pristine beaches. Discover its natural wonders, rich culture, and unforgettable adventures.                </p>
-                <button className="btn bg-[#ffbb00]">Discover Socotra</button>
+                <button onClick={() => document.getElementById("Socotra").scrollIntoView({ behavior: "smooth" })} className="btn bg-[#ffbb00]">Discover Socotra</button>
                 </div>
             </div>
 

@@ -8,7 +8,7 @@ function Footer() {
                 <p className="font-bold">
                 Socotra Way Ltd.
                 <br />
-                Providing reliable tech since 1992
+                Your Trusted Travel Partner for Island Adventures
                 </p>
                 <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
             </aside>

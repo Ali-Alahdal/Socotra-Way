@@ -117,28 +117,9 @@ function Activities() {
   ];
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black"
+    <div id="Activites" className="relative w-full h-screen overflow-hidden bg-black"
     >
-      {/* <div className="absolute z-50 top-0 bg-linear-60  w-full h-full  bg-cover bg-center"
-      
-        style={{ 
-            backgroundImage: `url(${Wave})`,
-          }}>
-
-      </div> */}
-      {/* Background image - only on right side */}
-      <div className="absolute inset-0 flex">
-        {/* Left side - pure black */}
-        <div className="w-1/2 h-full bg-black"></div>
-        
-        {/* Right side - current card image */}
-        <div 
-          className="w-1/2 h-full  transition-all duration-1000 ease-in-out"
-          
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-        </div>
-      </div>
+ 
 
       {/* Content container */}
       <div  className="relative  bg-cover bg-center z-10 flex  lg:flex-row h-full container mx-auto px-4 sm:px-6" style={{ 
@@ -164,8 +145,8 @@ function Activities() {
               <p className="text-base sm:text-lg font-light mb-6 sm:mb-8 leading-relaxed">
                 {cards[currentIndex].description}
               </p>
-              <button className="px-6 sm:px-8 py-2 sm:py-3 bg-white text-black rounded-md hover:bg-gray-100 transition-colors font-medium text-sm sm:text-base">
-                Book Your Destination
+              <button onClick={() => document.getElementById("AboutUs").scrollIntoView({ behavior: "smooth" })} className="px-6 sm:px-8 py-2 sm:py-3 bg-white text-black rounded-md hover:bg-gray-100 transition-colors font-medium text-sm sm:text-base">
+                Adventure Awaits – Reserve Now
               </button>
             </motion.div>
           </AnimatePresence>
