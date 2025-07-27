@@ -1,4 +1,7 @@
-import Logo from "../../assets/logos/Logo.png"
+import Logo from "../../assets/logos/Logo.png";
+
+
+
 function Header() {
     return ( 
         <header className="fixed w-full z-50  ">
@@ -28,7 +31,7 @@ function Header() {
                             <li><a>Item 3</a></li>
                         </ul>
                         </div>
-                         <img width={"60px"} height={"60px"} className="hidden lg:inline-block fill-current  bg-white rounded-full" src={Logo} />
+                         <img width={"50px"} height={"50px"} className="hidden lg:inline-block fill-current  bg-white rounded-full" src={Logo} />
                         <a className="btn btn-ghost text-xl" >Socotra Way</a>
                     </div>
                     <div className="navbar-center hidden lg:flex">

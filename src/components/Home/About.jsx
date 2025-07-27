@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Landscapes from "../../assets/images/home/landscapes.jpg"
 import Animals from "../../assets/images/home/animals.jpg"
 import Cultur from "../../assets/images/home/cultur.jpg"
+
 function About() {
   const activites = [
     {
@@ -54,7 +55,7 @@ function About() {
 
   return (
     <section  className={`   lg:pt-[10%] pt-[40%] bg-white `}>
-     
+   
       <div
         ref={headerRef}
         data-index={-1}

@@ -1,23 +1,23 @@
 import { useEffect, useRef, useState } from "react";
 import Passport from "../../assets/images/home/passport.jpg";
 import Flight from "../../assets/images/home/flight.jpg";
-import Tour from "../../assets/images/home/tour.jpg";
+import Tour from "../../assets/logos/Logo.png";
 
 function HowToTravel() {
   const features = [
     {
-      title: "Copy paste components",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
+      title: "Visa",
+      desc: "A valid visa is required to visit Socotra, costing USD 150. We handle the application and send it to you 5–7 days before travel, and if you prefer not to have a passport stamp, just let us know in advance so we can help",
       img: Passport,
     },
     {
-      title: "100% customizable",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
+      title: "Flights",
+      desc: "The easiest way to reach Socotra is via a twice-weekly humanitarian flight from Abu Dhabi during the high season (October–April). It’s not bookable online, but we can help arrange a seat through our airline contacts.",
       img: Flight,
     },
     {
-      title: "24/7 support",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
+      title: "Arranging a full travel package",
+      desc: "With no public transport or rental cars on Socotra, the best way to explore is by booking a tour with a local agency like Us (Socotra Way), where English-speaking guides will show you the island’s top spots",
       img: Tour,
     },
   ];
@@ -64,14 +64,13 @@ function HowToTravel() {
           style={{ transitionDelay: "150ms" }}
         >
           <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground">
-            Features
+            Socotra
           </div>
           <h2 className="text-4xl font-medium">
-            Various integrations to help you grow your business
+            Traveling to Socotra
           </h2>
           <p className="text-lg text-zinc-600">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-            sunt deleniti aliquid voluptates, nihil culpa enim.
+           Let Us Guide You to This Hidden Gem
           </p>
         </div>
 
@@ -99,23 +98,7 @@ function HowToTravel() {
               <div className="p-6">
                 <p className="mb-1 font-semibold">{feature.title}</p>
                 <p className="text-zinc-600">{feature.desc}</p>
-                <a href="#" className="mt-4 flex items-center gap-2 font-medium">
-                  Learn more
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-chevron-right w-4"
-                  >
-                    <path d="m9 18 6-6-6-6" />
-                  </svg>
-                </a>
+              
               </div>
             </div>
           ))}

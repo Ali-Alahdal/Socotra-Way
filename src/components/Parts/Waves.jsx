@@ -3,7 +3,7 @@ import "../../Waves.css"
 
 const Waves = () => {
   return (
-    <div className="header absolute  xl:bottom-[-30%]  bottom-[-20%]  w-full text-center text-white">
+    <div className="header absolute  xl:bottom-[-25%]  bottom-[-20%]  w-full text-center text-white">
     
 
       {/* Waves */}

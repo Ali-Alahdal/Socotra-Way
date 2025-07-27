@@ -3,6 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import Landscapes from "../../assets/images/home/landscapes.jpg";
 import Stars from "../../assets/images/home/stars.jpg";
 import Swim from "../../assets/images/home/swim.jpg";
+import Hiking from "../../assets/images/home/bg/introduction.jpg"
+import Flora from "../../assets/images/home/Activities/flora.jpg"
+import Camping from "../../assets/images/home/Activities/camping.jpeg"
+import Diving from "../../assets/images/home/Activities/diving.jpg"
+import Camel from "../../assets/images/home/Activities/camel.jpg"
+
 
 function Activities() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,28 +17,68 @@ function Activities() {
   const cards = [
     {
       id: 1,
-      title: "DOLOMITES SUNRISE",
-      subtitle: "Winter Mountains",
-      description: "Celebrate the season by planning a wintertime trip to one of our favourite mountain getaways.",
-      imageUrl: Stars,
-      thumbnailUrl: Stars  
+      title: "Hiking and Trekking",
+      subtitle: "Discover Socotra Activities",
+      description: "Socotra has scenic trails through mountains and valleys, especially in the Hajhir range, offering great views and adventure.",
+      imageUrl: Hiking,
+      thumbnailUrl: Hiking  
     },
     {
       id: 2,
-      title: "WHITE ALPS CLOUDS",
-      subtitle: "Cold Weather Adventures",
-      description: "Experience the magic of alpine winters with our exclusive guided tours through snow-covered peaks.",
-      imageUrl: Swim,
-      thumbnailUrl: Swim
+      title: "Exploring Unique Flora",
+      subtitle: "Discover Socotra Activities",
+      description: "The island is home to rare plants like the Dragon Blood Tree and Bottle Tree, found only on Socotra’s strange landscapes.",
+      imageUrl: Flora,
+      thumbnailUrl: Flora
     },
     {
       id: 3,
-      title: "LIGHTS OF AURORA",
-      subtitle: "Northern Wonders",
-      description: "Witness the breathtaking aurora borealis dancing across winter mountain skies.",
+      title: "Camping",
+      subtitle: "Discover Socotra Activities",
+      description: "With few hotels, camping is the main way to stay. Most people sleep in tents under the stars near beaches or mountains.",
+      imageUrl: Camping,
+      thumbnailUrl: Camping
+    },
+      {
+      id: 4,
+      title: "Swimming with Dolphins",
+      subtitle: "Discover Socotra Activities",
+      description: "Beaches like Shoab and Arher are quiet, clean, and perfect for swimming, sunbathing, or just enjoying nature.",
+      imageUrl: Swim,
+      thumbnailUrl: Swim
+    },
+      {
+      id: 5,
+      title: "Snorkeling and Free Diving",
+      subtitle: "Discover Socotra Activities",
+      description: "Coral reefs near the shore, especially in Dihamri, make snorkeling easy and rewarding, with colorful marine life all around.",
+      imageUrl: Diving,
+      thumbnailUrl: Diving
+    },
+    {
+      id: 6,
+      title: "Camel or Donkey Riding",
+      subtitle: "Discover Socotra Activities",
+      description: "In remote areas, short rides on camels or donkeys are still used and available for travelers on treks.",
+      imageUrl: Camel,
+      thumbnailUrl: Camel
+    },
+      {
+      id: 7,
+      title: "Landscape and Wildlife Photography",
+      subtitle: "Discover Socotra Activities",
+      description: "Socotra’s unusual plants, animals, and landscapes provide excellent opportunities for photographers.",
       imageUrl: Landscapes,
       thumbnailUrl: Landscapes
-    }
+    },
+      {
+      id: 8,
+      title: "Stargazing",
+      subtitle: "Discover Socotra Activities",
+      description: "With no light pollution, Socotra’s night skies are perfect for seeing stars and the Milky Way.",
+      imageUrl: Stars,
+      thumbnailUrl: Stars
+    },
   ];
 
   // Auto-play functionality

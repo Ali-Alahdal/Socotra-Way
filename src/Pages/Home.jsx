@@ -12,6 +12,7 @@ import HowToTravel from "../components/Home/HowToTravel";
 import EscapeDeals from "../components/Parts/StackedCardsScroll";
 import Card from "../components/Home/Services";
 import ContactUs from "../components/Home/ContactUs";
+import AnimatedBackground from "../components/Parts/AnimatedBackground";
 function Home() {
       const cards = [
     { title: 'Card 1', content: 'This is the first card content.' },
@@ -35,7 +36,7 @@ function Home() {
                         // }}
                     >
 
-                          
+                        
                         <About />
                           <Activities />
                         <EscapeDeals />

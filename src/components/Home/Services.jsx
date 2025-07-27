@@ -163,7 +163,7 @@ const cards = [
   [Travel, 340, 10, "Visa & Flights", "We assist with visa applications and flight bookings, ensuring an easy route to Socotra through cities like Cairo or Abu Dhabi."],
   [Car, 20, 40, "Transport", "Enjoy airport pickup and all-island travel in 4x4 vehicles, plus optional boat trips to remote beaches like Shuab."],
   [Camp, 60, 90, "Accommodation", "Stay in comfortable beach campsites or eco-lodges, complete with bedding, meals, and basic facilities for a cozy island experience."],
-  [Guide, 80, 120, "Guided Tours", "Explore Socotra’s iconic sites—Dragon’s Blood trees, Hoq Cave, Arher dunes, and Detwah Lagoon—with knowledgeable local guides."],
+  [Guide, 80, 120, "Guided Tours", "Explore Socotra’s iconic sites Dragon’s Blood trees, Hoq Cave, Arher dunes, and Detwah Lagoon with knowledgeable local guides."],
   [LocalMeals, 100, 140, "Local Meals", "Savor fresh seafood, flatbreads, honey, and dates. We cater to special dietary needs, including vegetarian options."],
   [Safety, 205, 245, "Safety Support", "We provide first aid, travel insurance advice, and satellite communication for peace of mind during your trip."],
   [Cultur, 260, 290, "Cultural Experiences", "Connect with Socotri life through village visits, local crafts, traditional honey gathering, music, and storytelling nights."],
